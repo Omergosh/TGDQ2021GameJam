@@ -23,12 +23,14 @@ public class CreatureScript : MonoBehaviour
     // References to components/objects
     public Rigidbody2D rigidbody;
     public Animator animator;
+    public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,17 @@ public class CreatureScript : MonoBehaviour
         if (animator != null)
         {
             UpdateAnimations();
+        }
+        if (spriteRenderer != null)
+        {
+            if (inputMovement.x < -0.05f)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (inputMovement.x > 0.05f)
+            {
+                spriteRenderer.flipX = false;
+            }
         }
     }
 
