@@ -272,6 +272,7 @@ MonoBehaviour:
   dashForce: 30
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!61 &65150478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -431,6 +432,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &80508653
 Rigidbody2D:
   serializedVersion: 4
@@ -619,6 +621,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &354385826
 Rigidbody2D:
   serializedVersion: 4
@@ -919,6 +922,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &377718403
 Rigidbody2D:
   serializedVersion: 4
@@ -1505,6 +1509,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &723475974
 Rigidbody2D:
   serializedVersion: 4
@@ -1874,6 +1879,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &843471737
 Rigidbody2D:
   serializedVersion: 4
@@ -2041,6 +2047,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &934587703
 Rigidbody2D:
   serializedVersion: 4
@@ -2208,6 +2215,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &938413388
 Rigidbody2D:
   serializedVersion: 4
@@ -2375,6 +2383,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &1050400944
 Rigidbody2D:
   serializedVersion: 4
@@ -2542,6 +2551,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &1189527965
 Rigidbody2D:
   serializedVersion: 4
@@ -3215,6 +3225,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &1880079820
 Rigidbody2D:
   serializedVersion: 4
@@ -3382,6 +3393,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &1900578772
 Rigidbody2D:
   serializedVersion: 4
@@ -3549,6 +3561,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &1957660120
 Rigidbody2D:
   serializedVersion: 4
@@ -3849,6 +3862,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &1986026929
 Rigidbody2D:
   serializedVersion: 4
@@ -4016,6 +4030,7 @@ MonoBehaviour:
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!50 &1992120970
 Rigidbody2D:
   serializedVersion: 4
