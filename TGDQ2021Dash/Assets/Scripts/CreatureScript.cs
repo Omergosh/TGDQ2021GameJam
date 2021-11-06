@@ -9,7 +9,7 @@ public enum CreatureAnimState
     HIT
 }
 
-public class PlayerScript : MonoBehaviour
+public class CreatureScript : MonoBehaviour
 {
     // State variables
     public bool playerControlled = true;
@@ -34,7 +34,10 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateAnimations();
+        if (animator != null)
+        {
+            UpdateAnimations();
+        }
     }
 
     void FixedUpdate()
