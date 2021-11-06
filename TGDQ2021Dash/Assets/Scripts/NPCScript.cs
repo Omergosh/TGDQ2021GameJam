@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPCScript : MonoBehaviour
 {
+    bool hasBeenTagged = false;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CreatureAnimState
+{
+    IDLE,
+    RUNNING,
+    HIT
+}
+
 public class PlayerScript : MonoBehaviour
 {
     // State variables
     public bool playerControlled = true;
     public Vector2 inputMovement = new Vector2();
+    public CreatureAnimState currentAnimState = CreatureAnimState.IDLE;
 
     // Static values
     public float moveForce = 10f;
@@ -26,7 +34,17 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateAnimations();
+    }
+
+    void FixedUpdate()
+    {
         ApplyMoveForce();
+        //if (inputMovement.magnitude > 0)
+        //{
+        //    ApplyDashForce();
+        //    inputMovement = Vector2.zero;
+        //}
     }
 
     public void ApplyMoveForce()
@@ -36,6 +54,32 @@ public class PlayerScript : MonoBehaviour
 
     public void ApplyDashForce()
     {
-        rigidbody.AddForce(inputMovement * dashForce, ForceMode2D.Impulse);
+        rigidbody.AddForce(inputMovement.normalized * dashForce, ForceMode2D.Impulse);
+    }
+
+    private void UpdateAnimations()
+    {
+        //if (rigidbody.velocity.magnitude > 5f)
+        if (inputMovement.magnitude > 0.05f)
+        {
+            currentAnimState = CreatureAnimState.RUNNING;
+        }
+        else
+        {
+            currentAnimState = CreatureAnimState.IDLE;
+        }
+        animator.SetInteger("animation_state", (int)currentAnimState);
+    }
+
+    public void SetSloMo(bool isSloMoOnNow)
+    {
+        if (isSloMoOnNow)
+        {
+            animator.speed = 0.5f;
+        }
+        else
+        {
+            animator.speed = 1f;
+        }
     }
 }
