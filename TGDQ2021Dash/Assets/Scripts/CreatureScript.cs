@@ -98,4 +98,21 @@ public class CreatureScript : MonoBehaviour
             animator.speed = 1f;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log("Collided creature!");
+        if (this.playerControlled)
+        {
+            Debug.Log("Player collided!");
+            // If this is the player, and just collided with an NPC creature, tag them!
+            NPCScript collidedCreature = collision.gameObject.GetComponent<NPCScript>();
+            if(collidedCreature != null)
+            {
+                Debug.Log("Tag!");
+                collidedCreature.Tag();
+                //Destroy(collidedCreature.gameObject);
+            }
+        }
+    }
 }
