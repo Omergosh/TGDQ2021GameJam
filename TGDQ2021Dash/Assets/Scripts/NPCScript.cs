@@ -54,7 +54,7 @@ public class NPCScript : MonoBehaviour
                         Random.Range(-1f, 1f)
                         );
 
-                wanderDuration = Random.Range(0.5f, 4f);
+                wanderDuration = Random.Range(wanderDurationMin, wanderDurationMax);
             }
         }
         else if(currentState == NPCState.WANDERING)
