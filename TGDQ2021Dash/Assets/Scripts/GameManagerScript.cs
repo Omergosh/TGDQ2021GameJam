@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -16,15 +17,27 @@ public class GameManagerScript : MonoBehaviour
     private PlayerInput playerInput;
     private InputAction moveAction;
     private InputAction dashAction;
+    private InputAction resetAction;
 
     bool gameEnded = false;
 
-    // Start is called before the first frame update
-    void Start()
+    // Start is called when the script instance is being loaded
+    void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions["Move"];
         dashAction = playerInput.actions["Dash"];
+        resetAction = playerInput.actions["Reset"];
+    }
+
+    private void OnEnable()
+    {
+        dashAction.performed += Dash;
+    }
+
+    private void OnDisable()
+    {
+        dashAction.performed -= Dash;
     }
 
     // Update is called once per frame
@@ -40,6 +53,26 @@ public class GameManagerScript : MonoBehaviour
                 winScreen.SetActive(true);
             }
         }
+        
+        if (resetAction.IsPressed())
+        {
+            ResetGame();
+        }
+    }
+
+    private void Dash(InputAction.CallbackContext context)
+    {
+        playerCreature.ApplyDashForce();
+    }
+
+    void ResetGame()
+    {
+        // Some actual process for resetting the game board?
+        //winScreen.SetActive(false);
+
+        // Nah, just reload the entire scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 
     bool CheckWinCondition()
@@ -56,10 +89,5 @@ public class GameManagerScript : MonoBehaviour
         }
 
         return gameEnded;
-    }
-
-    void ResetGame()
-    {
-        winScreen.SetActive(false);
     }
 }

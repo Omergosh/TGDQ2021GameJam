@@ -269,7 +269,7 @@ MonoBehaviour:
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
   moveForce: 15
-  dashForce: 30
+  dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -424,7 +424,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -461,7 +461,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -944,7 +944,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: -1, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -981,7 +981,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -1253,7 +1253,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -1290,7 +1290,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -1868,7 +1868,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -1905,7 +1905,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -2303,7 +2303,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -2462,7 +2462,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -2481,7 +2481,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -2499,7 +2499,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2.5
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -2658,7 +2658,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -2677,7 +2677,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -2695,7 +2695,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -2854,7 +2854,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -2873,7 +2873,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -2891,7 +2891,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -3151,7 +3151,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -3170,7 +3170,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -3188,7 +3188,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -3929,7 +3929,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -3948,7 +3948,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -3966,7 +3966,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -4125,7 +4125,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -4144,7 +4144,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -4162,7 +4162,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -4321,7 +4321,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -4340,7 +4340,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -4358,7 +4358,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -4650,7 +4650,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -4669,7 +4669,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -4687,7 +4687,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
@@ -4846,7 +4846,7 @@ MonoBehaviour:
   wanderDuration: 2
   waitDuration: 1
   wanderDurationMin: 0.2
-  wanderDurationMax: 1
+  wanderDurationMax: 2
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
@@ -4865,7 +4865,7 @@ MonoBehaviour:
   playerControlled: 0
   inputMovement: {x: 0, y: 0}
   currentAnimState: 0
-  moveForce: 10
+  moveForce: 20
   dashForce: 20
   rigidbody: {fileID: 0}
   animator: {fileID: 0}
@@ -4883,7 +4883,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
