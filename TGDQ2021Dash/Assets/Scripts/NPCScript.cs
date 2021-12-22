@@ -19,20 +19,27 @@ public class NPCScript : MonoBehaviour
     public NPCState currentState = NPCState.VIBING;
     public float currentStateTimer = 0f;
 
+    // physics materials
+    public PhysicsMaterial2D creatureMaterial;
+    public PhysicsMaterial2D frozenMaterial;
+
     public enum NPCState
     {
         WANDERING,
-        VIBING
+        VIBING,
+        FROZEN
     }
 
     SpriteRenderer spriteRenderer;
     CreatureScript creatureScript;
+    Rigidbody2D rigidbody2D;
 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         creatureScript = GetComponent<CreatureScript>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -89,6 +96,7 @@ public class NPCScript : MonoBehaviour
             spriteRenderer.color.b,
             0.5f
             );
+        Freeze();
     }
 
     public void Untag()
@@ -100,5 +108,24 @@ public class NPCScript : MonoBehaviour
             spriteRenderer.color.b,
             1f
             );
+        Unfreeze();
+    }
+
+    public void Freeze()
+    {
+        currentState = NPCState.FROZEN;
+        creatureScript.inputMovement = Vector2.zero;
+        creatureScript.Freeze();
+        rigidbody2D.sharedMaterial = frozenMaterial;
+    }
+
+    public void Unfreeze()
+    {
+        if (currentState == NPCState.FROZEN)
+        {
+            currentState = NPCState.VIBING;
+        }
+        creatureScript.Unfreeze();
+        rigidbody2D.sharedMaterial = creatureMaterial;
     }
 }

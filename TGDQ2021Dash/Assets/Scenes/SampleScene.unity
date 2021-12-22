@@ -319,6 +319,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 0}
+  frozenMaterial: {fileID: 0}
 --- !u!1 &80508648
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +430,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &80508652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,6 +952,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &354385825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,6 +1263,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &377718402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1872,6 +1880,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &723475973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,6 +2280,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &843471736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2466,6 +2478,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &934587702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2662,6 +2676,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &938413387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2858,6 +2874,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &1050400943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3155,6 +3173,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &1189527964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3933,6 +3953,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &1880079819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4129,6 +4151,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &1900578771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4325,6 +4349,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &1957660119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4654,6 +4680,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &1986026928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4850,6 +4878,8 @@ MonoBehaviour:
   wanderDirection: {x: -1, y: 0}
   currentState: 1
   currentStateTimer: 0
+  creatureMaterial: {fileID: 6200000, guid: acf10075c6339f541a8c9de98a5ce960, type: 2}
+  frozenMaterial: {fileID: 6200000, guid: e82e36a96ac7fe747a543ae20f3e9e0c, type: 2}
 --- !u!114 &1992120969
 MonoBehaviour:
   m_ObjectHideFlags: 0

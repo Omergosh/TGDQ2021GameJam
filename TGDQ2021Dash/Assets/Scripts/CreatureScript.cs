@@ -6,7 +6,8 @@ public enum CreatureAnimState
 {
     IDLE,
     RUNNING,
-    HIT
+    HIT,
+    FROZEN
 }
 
 public class CreatureScript : MonoBehaviour
@@ -76,15 +77,18 @@ public class CreatureScript : MonoBehaviour
     private void UpdateAnimations()
     {
         //if (rigidbody.velocity.magnitude > 5f)
-        if (inputMovement.magnitude > 0.05f)
+        if (currentAnimState != CreatureAnimState.FROZEN)
         {
-            currentAnimState = CreatureAnimState.RUNNING;
+            if (inputMovement.magnitude > 0.05f)
+            {
+                currentAnimState = CreatureAnimState.RUNNING;
+            }
+            else
+            {
+                currentAnimState = CreatureAnimState.IDLE;
+            }
+            animator.SetInteger("animation_state", (int)currentAnimState);
         }
-        else
-        {
-            currentAnimState = CreatureAnimState.IDLE;
-        }
-        animator.SetInteger("animation_state", (int)currentAnimState);
     }
 
     public void SetSloMo(bool isSloMoOnNow)
@@ -97,6 +101,18 @@ public class CreatureScript : MonoBehaviour
         {
             animator.speed = 1f;
         }
+    }
+
+    public void Freeze()
+    {
+        animator.speed = 0f;
+        currentAnimState = CreatureAnimState.FROZEN;
+    }
+
+    public void Unfreeze()
+    {
+        animator.speed = 1f;
+        currentAnimState = CreatureAnimState.IDLE;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
