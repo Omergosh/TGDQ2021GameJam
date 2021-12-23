@@ -12,6 +12,10 @@ public class GameManagerScript : MonoBehaviour
 
     // UI
     public GameObject winScreen;
+    public TMPro.TextMeshProUGUI timerText;
+
+    // Other variables
+    private float timeSpentInLevel = 0f;
 
     // Input management
     private PlayerInput playerInput;
@@ -28,6 +32,10 @@ public class GameManagerScript : MonoBehaviour
         moveAction = playerInput.actions["Move"];
         dashAction = playerInput.actions["Dash"];
         resetAction = playerInput.actions["Reset"];
+
+        winScreen.SetActive(false);
+        timeSpentInLevel = 0f;
+        UpdateTimerUI();
     }
 
     private void OnEnable()
@@ -52,6 +60,10 @@ public class GameManagerScript : MonoBehaviour
                 Debug.Log("Tag, everyone's it! We all win.");
                 winScreen.SetActive(true);
             }
+            else
+            {
+                UpdateTimerUI();
+            }
         }
         
         if (resetAction.IsPressed())
@@ -65,14 +77,10 @@ public class GameManagerScript : MonoBehaviour
         playerCreature.ApplyDashForce();
     }
 
-    void ResetGame()
+    void UpdateTimerUI()
     {
-        // Some actual process for resetting the game board?
-        //winScreen.SetActive(false);
-
-        // Nah, just reload the entire scene.
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        timeSpentInLevel += Time.deltaTime;
+        timerText.text = timeSpentInLevel.ToString("N2");
     }
 
     bool CheckWinCondition()
@@ -89,5 +97,26 @@ public class GameManagerScript : MonoBehaviour
         }
 
         return gameEnded;
+    }
+
+    void ResetGame()
+    {
+        // Some actual process for resetting the game board?
+        winScreen.SetActive(false);
+        timeSpentInLevel = 0f;
+        UpdateTimerUI();
+
+        // Nah, just reload the entire scene.
+        ResetScene();
+    }
+
+    void ResetScene()
+    {
+        // Some actual process for resetting the game board?
+        //winScreen.SetActive(false);
+
+        // Nah, just reload the entire scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }
