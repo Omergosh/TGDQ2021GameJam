@@ -91,11 +91,17 @@ public class NPCScript : MonoBehaviour
     {
         hasBeenTagged = true;
         spriteRenderer.color = new Color(
-            spriteRenderer.color.r,
-            spriteRenderer.color.g,
+            0f,
+            0.7f,
             spriteRenderer.color.b,
-            0.5f
+            0.55f
             );
+        //spriteRenderer.color = new Color(
+        //    spriteRenderer.color.r,
+        //    spriteRenderer.color.g,
+        //    spriteRenderer.color.b,
+        //    0.5f
+        //    );
         Freeze();
     }
 
@@ -103,11 +109,17 @@ public class NPCScript : MonoBehaviour
     {
         hasBeenTagged = false;
         spriteRenderer.color = new Color(
-            spriteRenderer.color.r,
-            spriteRenderer.color.g,
+            1f,
+            1f,
             spriteRenderer.color.b,
             1f
             );
+        //spriteRenderer.color = new Color(
+        //    spriteRenderer.color.r,
+        //    spriteRenderer.color.g,
+        //    spriteRenderer.color.b,
+        //    1f
+        //    );
         Unfreeze();
     }
 
